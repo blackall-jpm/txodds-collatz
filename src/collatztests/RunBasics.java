@@ -9,6 +9,6 @@ import org.junit.runners.Suite.SuiteClasses;
 		TestCase000Increment.class, TestCase001.class, TestCase002.class, TestCase003.class, TestCase004.class,
 		TestCase005.class, TestCase006.class })
 
-public class RunAll {
+public class RunBasics {
 
 }
