@@ -25,4 +25,15 @@ public class TestMethods {
 		return http_status;
 	}
 
+	public int getOrpostPerformance (String strURL, String strGetOrPost) throws IOException {
+		URL url = new URL(strURL);
+		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+		con.setRequestMethod(strGetOrPost);
+		int http_status = con.getResponseCode();
+		//String strStatus = con.getResponseMessage();
+		//System.out.println("Status=" + http_status + " " + strStatus);
+		con.disconnect();
+		return http_status;
+	}
+
 }

@@ -34,7 +34,7 @@ public class PerformanceBaseline {
 			strTmp = strURL + strCmd + "/" + id + "/" + iStartNum; 
 			//System.out.println(strGetOrPost + " " + strTmp);
 			TestMethods tcMethods = new TestMethods();
-			int status = tcMethods.getOrpost(strTmp,strGetOrPost);
+			int status = tcMethods.getOrpostPerformance(strTmp,strGetOrPost);
 		}
 	}
 
@@ -45,7 +45,7 @@ public class PerformanceBaseline {
 			strTmp = strURL + strCmd + "/" + id; 
 			//System.out.println(strGetOrPost + " " + strTmp);
 			TestMethods tcMethods = new TestMethods();
-			int status = tcMethods.getOrpost(strTmp,strGetOrPost);
+			int status = tcMethods.getOrpostPerformance(strTmp,strGetOrPost);
 		}
 	}
 
