@@ -32,7 +32,7 @@ public class PerformanceBaseline {
 		//MAX machines 9223372036854775807L
 		for (id = 1; id < 9223372036854775807L; id++) {
 			strTmp = strURL + strCmd + "/" + id + "/" + iStartNum; 
-			System.out.println(strGetOrPost + " " + strTmp);
+			//System.out.println(strGetOrPost + " " + strTmp);
 			TestMethods tcMethods = new TestMethods();
 			int status = tcMethods.getOrpost(strTmp,strGetOrPost);
 		}
@@ -43,7 +43,7 @@ public class PerformanceBaseline {
 		strCmd = "destroy";
 		for (id = 1; id < 9223372036854775807L; id++) {
 			strTmp = strURL + strCmd + "/" + id; 
-			System.out.println(strGetOrPost + " " + strTmp);
+			//System.out.println(strGetOrPost + " " + strTmp);
 			TestMethods tcMethods = new TestMethods();
 			int status = tcMethods.getOrpost(strTmp,strGetOrPost);
 		}
